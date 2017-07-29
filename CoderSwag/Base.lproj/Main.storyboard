@@ -30,7 +30,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.34999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="149" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="msL-eB-G4A">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="149" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="msL-eB-G4A">
                                 <rect key="frame" x="0.0" y="69.5" width="375" height="533.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -38,11 +38,11 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="149"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aEI-Hz-GFt" id="hUi-iM-zag">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="148.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="149"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shirts" translatesAutoresizingMaskIntoConstraints="NO" id="vGq-0C-G2R">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="155"/>
+                                                    <rect key="frame" x="0.0" y="3" width="375" height="142.5"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SHIRTS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TSY-tR-VSU">
                                                     <rect key="frame" x="103.5" y="55.5" width="168" height="38"/>
@@ -57,11 +57,11 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="TSY-tR-VSU" firstAttribute="centerY" secondItem="hUi-iM-zag" secondAttribute="centerY" id="84e-Le-Ncy"/>
-                                                <constraint firstAttribute="bottom" secondItem="vGq-0C-G2R" secondAttribute="bottom" constant="-6.5" id="JcS-Yg-BRD"/>
                                                 <constraint firstItem="TSY-tR-VSU" firstAttribute="centerX" secondItem="hUi-iM-zag" secondAttribute="centerX" id="NTT-gz-rF5"/>
                                                 <constraint firstItem="vGq-0C-G2R" firstAttribute="leading" secondItem="hUi-iM-zag" secondAttribute="leading" id="NtG-7q-SHB"/>
+                                                <constraint firstItem="vGq-0C-G2R" firstAttribute="top" secondItem="hUi-iM-zag" secondAttribute="top" constant="3" id="a0I-fV-Srz"/>
+                                                <constraint firstAttribute="bottom" secondItem="vGq-0C-G2R" secondAttribute="bottom" constant="3" id="nxe-7u-yMt"/>
                                                 <constraint firstAttribute="trailing" secondItem="vGq-0C-G2R" secondAttribute="trailing" id="oiC-tx-vdx"/>
-                                                <constraint firstItem="vGq-0C-G2R" firstAttribute="top" secondItem="hUi-iM-zag" secondAttribute="top" id="xkV-g9-tR4"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
