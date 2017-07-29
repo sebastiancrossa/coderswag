@@ -14,6 +14,9 @@ class CategoriesVC: UIViewController, UITableViewDataSource, UITableViewDelegate
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        categoryTable.dataSource = self
+        categoryTable.delegate = self
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -21,10 +24,14 @@ class CategoriesVC: UIViewController, UITableViewDataSource, UITableViewDelegate
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "CategoryCell") as? CategoryCell {
+            let category = DataService.instance.getCategories()[indexPath.row]
+            cell.updateViews(category: category)
+            
+            return cell
+        } else {
+            return CategoryCell()
+        }
     }
     
-    
-    
 }
-
