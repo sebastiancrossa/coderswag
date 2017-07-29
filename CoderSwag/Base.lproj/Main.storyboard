@@ -21,6 +21,7 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="CategoriesVC" customModule="CoderSwag" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides/>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -87,7 +88,7 @@
                     <navigationItem key="navigationItem" title="CODER SWAG" id="6JH-dD-1WU"/>
                     <connections>
                         <outlet property="categoryTable" destination="msL-eB-G4A" id="dB5-Kj-4q0"/>
-                        <segue destination="Ka6-N1-ZWB" kind="show" id="9n7-me-TWz"/>
+                        <segue destination="Ka6-N1-ZWB" kind="show" identifier="ProductsVC" id="9n7-me-TWz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -97,7 +98,7 @@
         <!--CODER SWAG-->
         <scene sceneID="bZj-ih-dB0">
             <objects>
-                <viewController title="CODER SWAG" id="Ka6-N1-ZWB" sceneMemberID="viewController">
+                <viewController title="CODER SWAG" id="Ka6-N1-ZWB" customClass="ProductsVC" customModule="CoderSwag" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides/>
                     <view key="view" contentMode="scaleToFill" id="qBR-8b-xf1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
