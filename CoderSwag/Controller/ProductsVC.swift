@@ -34,7 +34,7 @@ class ProductsVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ProductCell", for: indexPath) as? ProductCell {
             let product = products[indexPath.row]
-            cell.updateView(product: product)
+            cell.updateViews(product: product)
             
             return cell
         }
